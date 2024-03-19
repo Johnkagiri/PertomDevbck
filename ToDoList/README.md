@@ -1,13 +1,28 @@
 # ToDoLIST
 
-This is a Node.js web application that
-interacts with a MySQL database to manage a simple todo list. The application should have the
-following functionalities:
+# Project Concept:
 
-1. Ability to add a new todo item to the database.
-2. Retrieve and display all todo items from the database.
-3. Mark a todo item as completed.
-4. Delete a todo item.
+The project aims to develop a web application for managing a simple todo list. Users can add, view, mark as completed, and delete todo items through a user-friendly interface. The application will utilize Node.js for the backend logic and MySQL for storing todo items.
+
+# Approach:
+
+1. Planning and Requirements Gathering:
+
+- Define the features and functionalities required for the todo list application, including adding, viewing, marking as completed, and deleting todo items.
+- Determine the technologies and tools to be used, such as Node.js for the backend and MySQL for the database.
+  -Plan the database schema for storing todo items, including tables, columns
+2. Database Design:
+
+- Design the database schema for storing todo items. This includes creating a table for todo items with columns for task description, completion status, etc.
+- Define appropriate data types, constraints, and relationships to ensure data integrity and efficiency.
+- Implement the database schema using MySQL.
+
+3. Backend Development (Node.js):
+
+- Set up a Node.js project with the necessary dependencies, including Express.js for handling HTTP requests.
+- Implement CRUD (Create, Read, Update, Delete) operations for managing todo items in the MySQL database.
+- Utilize proper error handling and asynchronous programming techniques to handle database interactions efficiently.
+- Implement routes for adding, retrieving, marking as completed, and deleting todo items.
 
 # Solution
 
