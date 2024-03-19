@@ -20,23 +20,23 @@ const ShoppingCart = ({products}) => {
   const totalPrice = cartItems.reduce((acc, curr) => acc + curr.price, 0);
 
   return (
-    <div>
-      <h2>Products</h2>
-      <ul>
+    <div className='p-4' >
+      <h2><b>Products</b></h2>
+      <ul className=' grid grid-cols-3 gap-4 mb-10 mt-2 ' >
         {products.map((product, index) => (
-          <li key={index}>
-            {product.name} - ${product.price}
-            <button onClick={() => addToCart(product)}>Add to Cart</button>
+          <li className=' flex flex-col border border-slate-400  ' key={index}>
+            <h4>{product.name} </h4> ${product.price}
+            <button className=' bg-blue-700 w-6/12 m-auto rounded-lg hover:bg-blue-950 ' onClick={() => addToCart(product)}>Add to Cart</button>
           </li>
         ))}
       </ul>
 
-      <h2>Shopping Cart</h2>
-      <ul>
+      <h2><b>Shopping Cart</b></h2>
+      <ul className=' grid grid-cols-3 gap-4 mb-10 mt-2 ' >
         {cartItems.map((item, index) => (
-          <li key={index}>
-            {item.name} - ${item.price}
-            <button onClick={() => removeFromCart(index)}>Remove</button>
+          <li className=' flex flex-col border border-slate-400  ' key={index}>
+           <h4> {item.name} </h4> ${item.price}
+            <button className=' bg-red-700 w-6/12 m-auto rounded-lg hover:bg-red-950 ' onClick={() => removeFromCart(index)}>Remove</button>
           </li>
         ))}
       </ul>
